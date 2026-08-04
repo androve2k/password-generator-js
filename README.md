@@ -2,11 +2,11 @@
 
 A tiny, zero-dependency, cryptographically secure password generator for JavaScript. Runs in any modern browser using the native [Web Crypto API](https://developer.mozilla.org/en-US/docs/Web/API/Crypto/getRandomValues) — no Math.random(), no external libraries, no build step required.
 
-**[Live demo →](https://andrearoversi.github.io/password-generator-js/)** · **[Full-featured version on roversia.it →](https://roversia.it/utility/password-sicura-en)**
+**[Live demo →](https://androve2k.github.io/password-generator-js/)** · **[Full-featured version on roversia.it →](https://roversia.it/utility/password-sicura-en)**
 
 ## Why
 
-Most "password generator" snippets floating around use `Math.random()`, which is **not** cryptographically secure and shouldn't be used to generate anything security-sensitive. This library uses `crypto.getRandomValues()` instead, generates entirely client-side, and never transmits or stores the output anywhere.
+Most “password generator” snippets floating around use `Math.random()`, which is **not** cryptographically secure and shouldn’t be used to generate anything security-sensitive. This library uses `crypto.getRandomValues()` instead, generates entirely client-side, and never transmits or stores the output anywhere.
 
 ## Features
 
@@ -19,7 +19,7 @@ Most "password generator" snippets floating around use `Math.random()`, which is
 
 ## Install
 
-Copy `src/password-generator.js` into your project, or clone this repo. No npm package yet — [let me know](https://github.com/andrearoversi/password-generator-js/issues) if you'd find one useful.
+Copy `src/password-generator.js` into your project, or clone this repo. No npm package yet — [let me know](https://github.com/androve2k/password-generator-js/issues) if you’d find one useful.
 
 ## Usage
 
@@ -71,13 +71,13 @@ const { score, label } = estimateStrength(pwd);
 
 ### `generatePassword(options?)`
 
-| Option    | Type    | Default | Description                  |
-|-----------|---------|---------|-------------------------------|
-| `length`  | number  | `16`    | Password length (4–128)       |
-| `upper`   | boolean | `true`  | Include A–Z                   |
-| `lower`   | boolean | `true`  | Include a–z                   |
-| `numbers` | boolean | `true`  | Include 0–9                   |
-| `symbols` | boolean | `true`  | Include `!@#$%^&*()_+-=[]{}...` |
+|Option   |Type   |Default|Description                    |
+|---------|-------|-------|-------------------------------|
+|`length` |number |`16`   |Password length (4–128)        |
+|`upper`  |boolean|`true` |Include A–Z                    |
+|`lower`  |boolean|`true` |Include a–z                    |
+|`numbers`|boolean|`true` |Include 0–9                    |
+|`symbols`|boolean|`true` |Include `!@#$%^&*()_+-=[]{}...`|
 
 Returns a `string`. Throws if all character sets are disabled, or if `length` is out of range.
 
@@ -98,7 +98,7 @@ Yes — it uses the same `crypto.getRandomValues()` API that password managers r
 Yes, in Node 19+ where `crypto.getRandomValues()` is available on the global object. For older Node versions, use the native `crypto` module instead.
 
 **Why no npm package?**
-Keeping this dependency-free and copy-pasteable on purpose. If there's demand, I'll publish `@roversia/password-generator` — [open an issue](https://github.com/andrearoversi/password-generator-js/issues) if you want it.
+Keeping this dependency-free and copy-pasteable on purpose. If there’s demand, I’ll publish `@roversia/password-generator` — [open an issue](https://github.com/androve2k/password-generator-js/issues) if you want it.
 
 ## Related
 
