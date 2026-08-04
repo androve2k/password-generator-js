@@ -25,10 +25,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andrearoversi/password-generator-js.git"
+    "url": "https://github.com/androve2k/password-generator-js.git"
   },
   "homepage": "https://roversia.it/utility/password-sicura-en",
   "bugs": {
-    "url": "https://github.com/andrearoversi/password-generator-js/issues"
+    "url": "https://github.com/androve2k/password-generator-js/issues"
   }
 }
